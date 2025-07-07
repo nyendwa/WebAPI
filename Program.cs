@@ -32,7 +32,4 @@ app.MapDelete("/todos/{id}", (int id) =>
 
 app.Run();
 
-public record Todo(int Id, string Name, DateTime DueDate, bool isCompleted)
-{
-    
-}
+public record Todo(int Id, string Name, DateTime DueDate, bool isCompleted);

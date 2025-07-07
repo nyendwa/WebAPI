@@ -1,1 +1,23 @@
-GET http://localhost:5221/
+GET http://localhost:5221/todos
+
+#### >>is a request separator
+
+POST http://localhost:5221/todos
+//json payload
+Content-Type: application/json
+
+{
+    "id":3,
+    "name": "Write 3rd Demo",
+    "dueDate": "2025-07-07T00:00:00",
+    "isCompleted": false
+}
+
+###
+GET http://localhost:5221/todos/3
+
+####
+
+DELETE http://localhost:5221/todos/3
+
+
